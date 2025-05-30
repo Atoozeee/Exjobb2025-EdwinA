@@ -1,0 +1,33 @@
+/*
+Theme Name: EdvintorpTheme
+Text Domain: Edvintorp
+Version: 1.2.1
+Description: Edvintorp Classic Wordpress Theme
+Tags: hero, booking, themed
+Author: Edwin Antonsson
+*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url('assets/images/svg/liquid-cheese.svg') no-repeat bottom;
+  background-size: 100% auto;
+};
+  
+  

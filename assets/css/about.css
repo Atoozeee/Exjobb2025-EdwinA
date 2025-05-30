@@ -1,0 +1,59 @@
+.about-page {
+  font-family: sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.info-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.info-section.alt {
+  background-color: #ececec;
+  box-shadow: 5px 5px 5px #505050;
+  transition: 0.3s;
+}
+
+.info-section.alt:hover {
+  transform: scale(1.01);
+}
+
+.info-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.text, .image {
+  flex: 1;
+  font-size: larger;
+  padding: 1rem;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .info-content,
+  .info-content.reverse {
+    flex-direction: column;
+  }
+
+  .image img {
+    margin-left: 0;
+  }
+}
+

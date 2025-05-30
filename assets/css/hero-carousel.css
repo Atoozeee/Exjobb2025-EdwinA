@@ -1,0 +1,82 @@
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+  }
+  
+.hero-carousel .slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+  
+.hero-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+  
+.carousel-controls {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+  
+.carousel-controls .dots {
+  display: flex;
+  gap: 8px;
+}
+  
+.carousel-controls .dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+  
+.carousel-controls .dots button.active {
+  background: #6ec007;
+}
+  
+#pauseBtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-carousel .carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 8px black;
+  z-index: 2;
+  max-width: 90%;
+  padding: 1rem;
+}
+  
+.hero-carousel .carousel-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+  
+.hero-carousel .carousel-text p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+  
+  
